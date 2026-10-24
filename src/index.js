@@ -4,7 +4,7 @@ export default {
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Task Board</title>
+<title>AIConnect Bootcamp Task Board</title>
 <style>
 :root{color-scheme:light;--ink:#202a35;--muted:#667085;--line:#e4e7ec;--paper:#f7f8fa;--blue:#315efb;--green:#157f5b}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,sans-serif}
@@ -19,9 +19,9 @@ form{display:grid;grid-template-columns:2fr 3fr 140px auto;gap:10px;align-items:
 @media(max-width:760px){.top{align-items:start;flex-direction:column}form{grid-template-columns:1fr}.board{grid-template-columns:1fr}.column{min-height:120px}header{padding:18px 22px}main{margin-top:24px}}
 </style></head>
 <body>
-<header><div><div class="brand"><span>■</span> Taskboard</div><div class="sub">A little more clarity, every day.</div></div><div class="sub">Saved on this device</div></header>
+<header><div><div class="brand"><span>■</span> AIConnect Task Board</div><div class="sub">AI-Driven Development live demo</div><div class="sub">Iloilo Science and Technology University · October 24, 2026</div></div><div class="sub">Saved on this device</div></header>
 <main>
-<section class="top"><div><h1>Your workspace</h1><p>Capture tasks, keep them moving, and see your progress.</p></div><div class="stats"><div class="stat"><b id="total">0</b><span>Total tasks</span></div><div class="stat"><b id="active">0</b><span>In progress</span></div><div class="stat"><b id="done">0</b><span>Completed</span></div></div></section>
+<section class="top"><div><h1>Build by doing</h1><p>A hands-on task board for the AIConnect Bootcamp. Add tasks, move work across stages, and explore how AI-assisted development turns an idea into a working app.</p></div><div class="stats"><div class="stat"><b id="total">0</b><span>Total tasks</span></div><div class="stat"><b id="active">0</b><span>In progress</span></div><div class="stat"><b id="done">0</b><span>Completed</span></div></div></section>
 <section class="panel"><h2>Add a task</h2><form id="task-form" novalidate><div class="field"><input id="title" name="title" maxlength="120" placeholder="Task title (required)" aria-label="Task title" required><div id="title-error" class="error" aria-live="polite"></div></div><div class="field"><input id="description" name="description" maxlength="500" placeholder="Description (optional)" aria-label="Task description"></div><div class="field"><select id="status" aria-label="Initial status"><option value="todo">To do</option><option value="doing">In progress</option><option value="done">Completed</option></select></div><button class="primary" type="submit">+ Add task</button></form></section>
 <div class="board-actions"><button id="archive-toggle" class="secondary" type="button">View archive</button></div>
 <section class="board" id="board" aria-label="Task board"></section>
