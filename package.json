@@ -1,0 +1,13 @@
+{
+  "name": "aiconnect-bootcamp-task-board",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Task Board live demo for the AIConnect Bootcamp on AI-Driven Development at Iloilo Science and Technology University.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
